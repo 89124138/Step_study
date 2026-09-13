@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step Study｜學習題庫</title>
+<style>
+:root{
+  --bg:#f5f7fb; --card:#fff; --text:#172033; --muted:#68738a;
+  --border:#e3e8f1; --primary:#315efb; --shadow:0 10px 30px rgba(25,42,70,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text)}
+header{background:#fff;border-bottom:1px solid var(--border)}
+.header-inner{max-width:1000px;margin:auto;padding:28px 22px}
+.brand{font-size:28px;font-weight:800;letter-spacing:.2px}
+.subtitle{margin-top:7px;color:var(--muted);font-size:15px}
+main{max-width:1000px;margin:34px auto;padding:0 22px 50px}
+h2{font-size:20px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;min-height:210px;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:.18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(25,42,70,.12);border-color:#cbd5ff}
+.icon{width:48px;height:48px;border-radius:14px;background:#eef2ff;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px}
+.card h3{margin:0 0 9px;font-size:20px}
+.card p{margin:0;color:var(--muted);line-height:1.65;font-size:14px;flex:1}
+.meta{margin-top:18px;font-size:13px;font-weight:700;color:var(--primary)}
+.coming{opacity:.58;cursor:default}
+.coming:hover{transform:none;box-shadow:var(--shadow);border-color:var(--border)}
+footer{text-align:center;color:#929bad;font-size:13px;padding:10px 20px 35px}
+@media(max-width:600px){.brand{font-size:24px}.header-inner{padding:23px 18px}main{margin-top:25px;padding:0 18px 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">Step Study</div>
+    <div class="subtitle">一步一步學習｜選擇科目與題庫開始練習</div>
+  </div>
+</header>
+
+<main>
+  <h2>我的學習題庫</h2>
+  <div class="grid">
+    <!-- 將 href 改成你實際上傳到 GitHub 的數學題庫檔名 -->
+    <a class="card" href="math_grade8_30.html">
+      <div class="icon">📐</div>
+      <h3>八年級數學</h3>
+      <p>30 題互動練習，隨機出題並保留原始考卷題號，包含重點提示、拆題技巧與解法。</p>
+      <div class="meta">開始練習 →</div>
+    </a>
+
+    <div class="card coming">
+      <div class="icon">📘</div>
+      <h3>其他數學題庫</h3>
+      <p>之後可以繼續加入不同章節、不同考卷或不同年級的數學練習。</p>
+      <div class="meta">準備中</div>
+    </div>
+
+    <div class="card coming">
+      <div class="icon">🔬</div>
+      <h3>自然科</h3>
+      <p>未來可加入自然科題庫、重點整理與互動測驗。</p>
+      <div class="meta">準備中</div>
+    </div>
+
+    <div class="card coming">
+      <div class="icon">🌏</div>
+      <h3>其他科目</h3>
+      <p>可持續擴充英文、國文、社會等科目，統一從這個首頁進入。</p>
+      <div class="meta">準備中</div>
+    </div>
+  </div>
+</main>
+
+<footer>Step Study · Personal Learning Hub</footer>
+</body>
+</html>
